@@ -1,19 +1,25 @@
 import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
-class Basics {
+fun main()= runBlocking{
 
+    GlobalScope.launch {
 
-    fun main(){
-
-
-        GlobalScope.launch {
-
-            println("Hi From corotine")
-        }
-
-        println("Hello from without corotines")
+        delay(1000)
+        println("Hello")
     }
 
+    println("World")
 
+
+    doWork()
+
+
+}
+
+suspend fun doWork() {
+
+    delay(2000)
 }

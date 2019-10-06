@@ -7,7 +7,7 @@ group 'com.rungenes.curotines.continued'
 version '1.0-SNAPSHOT'
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {

@@ -6,6 +6,9 @@ fun main(){
 
     muMovies
 
+    GlobalScope.launch {  }
+
+lazy {  }
 }
 
 val muMovies: String
